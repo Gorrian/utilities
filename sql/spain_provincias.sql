@@ -15,8 +15,9 @@
 # ------------------------------------------------------------
 
 CREATE TABLE `provincias` (
-  `id_provincia` smallint(6) DEFAULT NULL,
-  `provincia` varchar(30) DEFAULT NULL
+  `id_provincia` smallint(6) NOT NULL,
+  `provincia` varchar(30) DEFAULT NULL,
+  PRIMARY KEY(`id_provincia`)
 ) ENGINE=InnoDB;
 
 INSERT INTO `provincias` (`id_provincia`, `provincia`)
